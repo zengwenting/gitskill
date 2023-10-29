@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class text1 {
+    //修改合作同学的代码
     public static void main(String[] args) {
         PasswordGenerator newPassword=new PasswordGenerator();
         Password password=new Password();
