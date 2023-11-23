@@ -1,8 +1,13 @@
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-public class text1 {
+import java.util.Set;
+import java.util.Random;
+
+public class Main {
     public static void main(String[] args) {
-        PasswordGenerator newPassword=new PasswordGenerator();
-        Password password=new Password();
+        PasswordGenerator1 newPassword=new PasswordGenerator1();
+        Password1 password=new Password1();
         System.out.println("请输入需要加密的字符串：");
         Scanner reader=new Scanner(System.in);//输入加密字符串
         String encrypt=reader.next();
@@ -23,7 +28,7 @@ public class text1 {
             System.out.println("输入字符串超出长度限制！");
     }
 }
-class Password{
+class Password1{
 
     public void encrypt(String encrypt){//加密
         char password[]=new char[encrypt.length()];
@@ -87,13 +92,13 @@ class Password{
         }
     }
 }
-class PasswordGenerator{
+class PasswordGenerator1{
     private static final String lowercase="abcdefghyjklnmopqrstuvwxyz";
     private static final String uppercase="ABCDEFGHYJKLNMOPQRSTUVWXYZ";
     private static final String number="123456789";
     private static final String special="!@#$%^&*()<>?";
     static Random random=new Random();
-    public  PasswordGenerator(){
+    public  PasswordGenerator1(){
         int length=random.nextInt(16);
         String password=generatePassword(length);
         System.out.println("生成新密码是："+password);
