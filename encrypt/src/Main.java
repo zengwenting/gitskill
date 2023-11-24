@@ -1,10 +1,15 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+<<<<<<< HEAD:encrypt/src/Main.java
 import java.util.Set;
 import java.util.Random;
 
 public class Main {
+=======
+public class text1 {
+    //修改合作同学的代码
+>>>>>>> 0c391502cff2a016ac8c0f5c092844dbce0589a3:text1.java
     public static void main(String[] args) {
         PasswordGenerator1 newPassword=new PasswordGenerator1();
         Password1 password=new Password1();
